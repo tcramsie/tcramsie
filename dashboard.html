@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan P. Wallet</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card wallet-container shadow-lg">
+            <div class="card-header text-white bg-primary">
+                <h2 class="mb-0">Ivan P. Wallet</h2>
+            </div>
+            <div class="card-body wallet-content">
+                <p class="wallet-address">
+                    Wallet Address: <span id="wallet-address">0xAAee01e392ef10865685B4f66b19e5a8EAA678DD</span>
+                </p>
+                <div id="balances" class="balances mb-4">
+                    <!-- Ethereum -->
+                    <div class="coin card mb-3">
+                        <div class="card-body">
+                            <div class="coin-name font-weight-bold" id="coin1-name">Ethereum</div>
+                            <div class="coin-balance" id="coin1-balance">0.0000 ETH</div>
+                            <div class="coin-price text-muted" id="coin1-price">$0.00 USD</div>
+                        </div>
+                    </div>
+                    <!-- Add other coins similarly here -->
+                    <!-- Total Portfolio Value -->
+                    <p class="total-value font-weight-bold">
+                        Total Portfolio Value: <span id="total-value">$0.00</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
